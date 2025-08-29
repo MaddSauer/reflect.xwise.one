@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReflectWise.one – Fragen, die Resonanz erzeugen</title>
+  <style>
+    /* --- Reset & Grundlayout --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; }
+
+    /* --- Farbvariablen Light Mode --- */
+    :root {
+      --primary: #2b6cb0;   /* Blau */
+      --secondary: #805ad5; /* Violett */
+      --accent: #38b2ac;    /* Türkis */
+      --bg: #fafafa;
+      --bg-card: #ffffff;
+      --text: #222;
+      --text-light: #555;
+    }
+
+    /* --- Farbvariablen Dark Mode --- */
+    body.dark-mode {
+      --primary: #d4af37;   /* Gold */
+      --secondary: #b8860b; /* Bronze */
+      --accent: #daa520;    /* Warmgold */
+      --bg: #111;
+      --bg-card: #1b1b1b;
+      --text: #e5e5e5;
+      --text-light: #bbb;
+    }
+
+    /* --- Header --- */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white; text-align: center; padding: 4rem 2rem;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.2rem; opacity: 0.9; }
+
+    /* --- Section --- */
+    section { padding: 4rem 2rem; max-width: 900px; margin: auto; }
+    section h2 { color: var(--primary); margin-bottom: 1.5rem; font-size: 2rem; }
+    section p { margin-bottom: 1rem; font-size: 1.1rem; color: var(--text); }
+
+    /* --- Produktkarten --- */
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card {
+      background: var(--bg-card); padding: 2rem; border-radius: 10px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 14px rgba(0,0,0,0.25); }
+    .card h3 { margin-bottom: 1rem; color: var(--secondary); }
+    .card p { font-size: 0.95rem; margin-bottom: 1.5rem; color: var(--text-light); }
+
+    .btn {
+      display: inline-block; background: var(--primary); color: white; 
+      padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: bold;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--accent); }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center; padding: 2rem; background: #f0f0f0; color: #555; font-size: 0.9rem;
+    }
+    body.dark-mode footer { background: #1a1a1a; color: #999; }
+    footer a { color: var(--primary); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body class="dark-mode"> <!-- Dark Mode aktivieren: "dark-mode" -->
+  <!-- Header -->
+  <header>
+    <h1>ReflectWise.one</h1>
+    <p>Fragen, die Resonanz erzeugen. Klarheit. Tiefe. Wachstum.</p>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2>Warum ReflectWise.one?</h2>
+    <p>
+      Jede gute Frage ist wie ein Spiegel: Sie zeigt nicht nur, was da ist – sie lässt dich auch spüren, 
+      was in dir zum Klingen gebracht wird. <strong>ReflectWise.one</strong> steht für Fragen, die Resonanz erzeugen: 
+      für Selbstlerner, Leader, Moderatoren und Pädagogen.
+    </p>
+    <p>
+      Mit unseren Produkten tauchst du tiefer: Von klar strukturierten Frage-Sets bis hin zu vertiefenden 
+      Add-ons und Templates für deine tägliche Praxis.
+    </p>
+  </section>
+
+  <!-- Produkte -->
+  <section>
+    <h2>Unsere Produkte</h2>
+    <div class="products">
+      <div class="card">
+        <h3>63 Fragen – Das Basis-Set</h3>
+        <p>Ein kuratiertes Set von 63 Reflexionsfragen. Für 9 Wochen oder 2 Monate tägliche Klarheit, 
+           Fokus und innere Stärke.</p>
+        <a href="#" class="btn">Mehr erfahren</a>
+      </div>
+
+      <div class="card">
+        <h3>DeepDive Add-on</h3>
+        <p>Die verborgene Ebene hinter den Fragen: Erklärungen, Resonanzräume und Vertiefungsfragen. 
+           Für Selbstlerner & Leader.</p>
+        <a href="#" class="btn">Mehr erfahren</a>
+      </div>
+
+      <div class="card">
+        <h3>Templates & Tools</h3>
+        <p>Reflexions-Workflows in Notion, Obsidian oder Fibery. Digitale Strukturen für Klarheit im Alltag.</p>
+        <a href="#" class="btn">Mehr erfahren</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ReflectWise.one · Ein Teil des Wise-Versums</p>
+    <p><a href="mailto:info@reflectwise.one">Kontakt</a></p>
+  </footer>
+</body>
+</html>
