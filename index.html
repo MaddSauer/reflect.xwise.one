@@ -67,7 +67,7 @@
     footer { text-align: center; padding: 2rem; background: #f0f0f0; color: #555; font-size: 0.9rem; }
     body.dark-mode footer { background: #1a1a1a; color: #999; }
   </style>
-</head>
+</head class="dark-mode">
 <body>
   <!-- Header -->
   <header>
@@ -131,7 +131,7 @@
     const body = document.body;
 
     // Prüfen ob Theme gespeichert ist
-    if (localStorage.getItem("theme") === "dark") {
+    if (localStorage.getItem("theme") !== "light") {
       body.classList.add("dark-mode");
       toggle.textContent = "🌞";
     }
